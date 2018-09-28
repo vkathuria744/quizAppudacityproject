@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:id="@+id/the_ultimate_friends_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_marginRight="25sp"
+                android:layout_marginTop="10dp"
+                android:text="the ultimate friends quiz"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/Name_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/the_ultimate_friends_quiz"
+                android:backgroundTint="#FF0266"
+                android:hint="Enter Your Name"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:textColor="#0336FF"
+
+                />
+
+
+            <TextView
+                android:id="@+id/first_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name_field"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:text="1. which two writers created friends?"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+
+                android:id="@+id/cb1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_question"
+                android:layout_marginTop="8dp"
+                android:buttonTint="#FF0266"
+                android:padding="8dp"
+                android:text="david crane and marta kauffman"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold|italic"
+
+
+                />
+
+            <CheckBox
+                android:id="@+id/cb1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb1_1"
+                android:buttonTint="#FF0266"
+                android:text="david lynch"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/second_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb1_2"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="2. what is phoebe's twin sister called?"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_question">
+
+                <RadioButton
+
+                    android:id="@+id/r2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0266"
+                    android:padding="8dp"
+                    android:text="ursula"
+                    android:textAllCaps="true"
+                    android:textColor="#FF0266"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+                    android:id="@+id/r2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0266"
+                    android:padding="8dp"
+                    android:text="monica"
+                    android:textAllCaps="true"
+                    android:textColor="#FF0266"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+
+            <TextView
+
+                android:id="@+id/third_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg2"
+                android:padding="8dp"
+                android:text="3. In season 3 Rachel becomes assistant buyer at which department store?"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/third_question">
+
+                <RadioButton
+
+                    android:id="@+id/r3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/third_question"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0266"
+                    android:padding="8dp"
+                    android:text="forever 21"
+                    android:textAllCaps="true"
+                    android:textColor="#FF0266"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+
+                    android:id="@+id/r3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r3_1"
+                    android:layout_weight="1"
+                    android:buttonTint="#FF0266"
+                    android:padding="8dp"
+                    android:text="Bloomingdales"
+                    android:textAllCaps="true"
+                    android:textColor="#FF0266"
+                    android:textSize="15sp"
+
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <TextView
+
+                android:id="@+id/fourth_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg3"
+                android:padding="8dp"
+                android:text="What role did Joey play in the series Days of Our Lives?"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="19sp"
+                android:textStyle="bold"
+
+                />
+
+            <CheckBox
+
+                android:id="@+id/cb4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fourth_question"
+                android:layout_marginTop="8dp"
+                android:buttonTint="#FF0266"
+                android:padding="8dp"
+                android:text="Dr Drake Ramoray"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <CheckBox
+
+                android:id="@+id/cb4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb4_1"
+                android:layout_marginTop="8dp"
+                android:buttonTint="#FF0266"
+                android:padding="8dp"
+                android:text="Dr Steve Rogers"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <CheckBox
+
+                android:id="@+id/cb4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb4_2"
+                android:layout_marginTop="8dp"
+                android:buttonTint="#FF0266"
+                android:padding="8dp"
+                android:text="Dr Andrew"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+
+                android:id="@+id/fifth_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb4_3"
+                android:padding="8dp"
+                android:text="how many failed marriages does ross have during the series"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/et5_1"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fifth_question"
+                android:layout_marginTop="8dp"
+                android:textAllCaps="true"
+                android:textColor="#FF0266"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <Button
+
+                android:id="@+id/check_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et5_1"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="8sp"
+                android:background="#FF0266"
+                android:padding="16dp"
+                android:text="check result"
+                android:textAllCaps="true"
+                android:textColor="#0336FF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
